@@ -1,2 +1,2 @@
 # androidDeveloper2019
-跟随哔哩哔哩上面的2019年的Android开发的基础教程,这里用来记录下Code
+上面的2019年的Android开发的基础教程,这里用来记录下Code

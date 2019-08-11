@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidViewModelShareReference</string>
+    <string name="number">number</string>
+    <string name="plusOne">+</string>
+    <string name="munis">-</string>
+    <string name="data_key">data_key</string>
+    <string name="data_mudule">MyViewModelData</string>
+</resources>

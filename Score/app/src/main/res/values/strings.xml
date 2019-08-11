@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Score</string>
+    <string name="teama">A队</string>
+    <string name="teamB">B队</string>
+    <string name="textview">TextView</string>
+    <string name="plus1">+1</string>
+    <string name="plus2">+2</string>
+    <string name="plus3">+3</string>
+    <string name="todo">TODO</string>
+    <string name="reset">reset</string>
+</resources>

@@ -90,8 +90,8 @@ public class MortgageActivity extends AppCompatActivity implements OnClickListen
             mYear = yearArray[arg2];
         }
 
-        public void onNothingSelected(AdapterView<?> arg0) {}
-    }
+    public void onNothingSelected(AdapterView<?> arg0) {}
+}
 
     // 初始化基准利率下拉框
     private void initRatioSpinner() {

@@ -114,11 +114,180 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:id="@+id/rg_payment"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="还款方式："
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                />
 
+            <RadioButton
+                android:id="@+id/rb_interest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="等额本息" />
 
+            <RadioButton
+                android:id="@+id/rb_principal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="等额本金" />
         </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <CheckBox
+                android:id="@+id/ck_business"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:checked="true"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:text="商贷：　" />
+
+            <EditText
+                android:id="@+id/et_business"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/ck_business"
+                android:layout_toLeftOf="@+id/tv_business_unit"
+                android:gravity="right|center"
+                android:background="@drawable/edittext_selector"
+                android:textSize="17sp"
+                android:textColorHint="@color/grey"
+                android:hint="请输入商业贷款总额（单位万）"
+                android:textColor="@color/black"
+                android:maxLength="4"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tv_business_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:text="  万" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <CheckBox
+                android:id="@+id/ck_accumulation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:checked="false"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="公积金："/>
+
+            <EditText
+                android:id="@+id/et_accumulation"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:gravity="right|center"
+                android:background="@drawable/edittext_selector"
+                android:layout_toRightOf="@+id/ck_accumulation"
+                android:layout_toLeftOf="@+id/tv_accumulation_unit"
+                android:hint="请输入公积金贷款总额（单位万）"
+                android:textColor="@color/black"
+                android:maxLength="4"
+                android:textColorHint="@color/grey"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tv_accumulation_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="  万" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="贷款年限："/>
+
+            <Spinner
+                android:id="@+id/sp_year"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_year"
+                android:gravity="left|center"
+                android:spinnerMode="dialog"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/tv_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="基准利率：" />
+
+            <Spinner
+                android:id="@+id/sp_ratio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tv_radio"
+                android:spinnerMode="dialog"
+                android:gravity="left|center"
+                />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="计算还款明细"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/tv_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="还款总额为：***万\n其中利息总额为：***万\n月供(每月还款额)为：***"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
     </LinearLayout>
 </ScrollView>
 
